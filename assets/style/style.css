@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes  animacao  {
+    0% {color: #fff; font-size: 15px;}
+    100% { 
+        color: #0f73ff; 
+        font-size: 17px; 
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 2px;
+    }
+
+}
+
+body {
+    background-image: url(../img/fundo-tela.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    display: unset;
+    position: relative;
+    max-width: 100%;
+}
+
+head, h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    color: white;
+    background-color: #B05DF0;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px 2px 10px #E43901;
+}
+
+h1 {
+    padding: 10px ;
+}
+main {
+    margin: auto;
+    margin-top: 10px;
+    width: 60%;
+    height: 85%;
+    background-color: white;
+    background: url('../img/fundo-tela.svg');
+    background-size: auto;
+    background-position-x: left;
+    
+}
+
+img{
+    margin: 10px auto;
+    height: 160px;
+    width: 160px;
+    border: 2px solid #B05DF0;
+    border-radius: 50%;
+    box-shadow: 1px 1px 20px #000;
+}
+
+h2 {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 16px auto 0;
+}
+
+h3 {
+    width: 100%;
+    font-size: 16px;
+    margin: 8px 0;
+    font-weight: 100;
+}
+
+.container-butoes{
+    align-items: center;
+    justify-content: center;
+}
+
+.container-botoes button {
+    background: #eadbf66b;
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid #921aee;
+    color: #921aee;
+    box-shadow: -0.01px 0.1px 4px #B05DF0;
+    transition: all 0.3s ease;
+}
+
+.container-botoes button:hover {
+    
+    border-radius: 10px;
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid #B05DF0;
+    color: #000;
+  }
+footer {
+    background-color: #0f73ff;
+    position: fixed;
+    width: 100%;
+    height: 4%;
+    bottom: 0;
+    padding: 5px 0;
+}
+footer  .container-rodape {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    filter: opacity(70%);
+    animation-name: animacao;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: 1000;
+    animation-direction: alternate-reverse;
+}
