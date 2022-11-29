@@ -78,9 +78,21 @@ h3 {
     font-weight: 100;
 }
 
-.container-butoes{
+
+.container-botoes{
+    width: 80%;
+    height: 60%;
+    margin: auto;
+}
+
+.container-botoes ul li {
+    list-style-type: none;
+    display: inline-block;
     align-items: center;
-    justify-content: center;
+    margin: 15px 0 10px 0;
+    height: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .container-botoes button {
@@ -88,14 +100,28 @@ h3 {
     border: none;
     border-radius: 10px;
     padding: 8px;
-    margin: 5px;
+    margin: 8px 0;
     cursor: pointer;
     border: 1px solid #921aee;
     color: #921aee;
     box-shadow: -0.01px 0.1px 4px #B05DF0;
-    transition: all 0.3s ease;
+    transition: 0.5s linear;
+    font-size: 12px;
 }
 
+#mostrar {
+    display: none;
+}
+
+#passar_mouse:hover #mostrar {
+    display: block;
+}
+.container-botoes #mostrar {
+    font-weight: 600;
+    font-size: 12px;
+    color: #000;
+    
+}
 .container-botoes button:hover {
     
     border-radius: 10px;
@@ -104,7 +130,10 @@ h3 {
     cursor: pointer;
     border: 2px solid #B05DF0;
     color: #000;
-  }
+
+}
+
+ 
 footer {
     background-color: #0f73ff;
     position: fixed;
